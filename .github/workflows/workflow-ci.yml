@@ -19,5 +19,7 @@ jobs:
       with:
         node-version: 22.
     - run: chmod +x node_modules/.bin/jest
+    - run: npm uninstall jest
+    - run: npm install jest
     - run: npm install
     - run: npm test
